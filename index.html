@@ -3,91 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="formulário.css" media="screen">
-    <title>Formulário</title>
+    <!--Fontes que Utilizei do Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Termino das fonts-->
+    <link rel="stylesheet" href="stylestyle.css">
+    <title>Portfólio Rafael Gonçalves</title>
 </head>
 <body>
-    <div class="campo">
-        <h1 id="titulo">Cadastro de Devs</h1>
-        <p id="subtitulo">Complete suas informações:</p>
-        <br>
-     <!--Nome e sobrenome-->    
-    </div>
-    <forms>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="Nome"><strong>Nome</strong></label>
-            <input type="text" name="Nome" id="Nome" required >
-            </div>
-            
-            <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text" name="Sobrenome" id="Sobrenome" required>           
-            </div>
-           </fieldset>
-              <!--Nome e sobrenome-->
-           
-              <!--E-mail-->
-              <div class="campo">
-                <label for="email"><strong>Email</strong></label>
-                <input type="email" name="Email" id="Email" required>
-              </div>
-             
-              <!--Aplicacões dev-->
-              <div class="campo">
-                <label><storng>Para qual Tipo de Aplicação você desenvolve?</storng></label>
-                <label>
-                    <input type="radio" name="deweb" value="frontend" checked>Front-end
-                </label>
-                <label>
-                    <input type="radio" name="deweb" value="backend">Back-end
-                </label>
-                <label>
-                    <input type="radio" name="deweb" value="fullstack">FullStack
-                </label>
-            </div>
-             
-            <!--senioridade-->
-            <div class="campo">
-                <label for="senioridade">Senioridade</label>
-                <select id="senioridade">
-                  <option selected  disabled valu="">Selecione:</option> 
-                  <option>Junior</option>
-                  <option>Pleno</option>
-                  <option>Senior</option> 
-                </select>               
-                </div>      
-              
-                <!--Especialidades-->
-            <fieldset class="grupo">
-                <div id="check">
-                    <label><strong>Selecione as Tecnologias na qual utiliza:</strong></label><br><br>
-                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML" checked>   
-                    <label for="tecnologia1">HTML</label>
-                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-                    <label for="tecnologia1">CSS</label>                 
-                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
-                    <label for="tecnologia1">Javascript</label>
-                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
-                    <label for="tecnologia1">PHP</label>      
-                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
-                    <label for="tecnologia5">C#</label>         
-                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-                    <label for="tecnologia6">Python</label>  
-                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
-                    <label for="tecnologia7">Java</label>  
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#topo-do-site">
+                    <img src="Images/rafaelGonçalves logo port (1).png" alt="Logo porifolio rafaelGonçalves">                    
+                </a>  
+            </div> <!--logotipo--> 
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button>Contato</button>
+                </a>
+            </div><!--Botão de contato-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
+        <div class="interface">
+            <div class="flex">
+                <div class="topo-do-site">
                 </div>
-            </fieldset>
-                  
-            <!--Área de Texto-->
-            <div class="campo">
-                <br>
-                <label><strong>Fale aqui um pouco da sua Experiência Profissional:</strong> </label>
-                <textarea raw="6" style="width:26em;" id="experiencia" name="experiencia"></textarea> 
+                <div class="img-topo-do-site">
+                    <h1>Me <span>Apresentando</span>. </h1>
+                    <p>Olá meu nome é <span>Rafael</span>, o intuito desta página é falar um pouco sobre quem eu sou e apresentar meu portfólio. Aqui contarei um pouco dos meus hobbies e passatempos e apresentar um pouco da minha futura formação profissional. </p>
+                </div><!--img topo do site-->
+                <div class="btn-contato"> 
+
+                </div>
+
+                <div class="img-topo-do-site">
+                    <img src="Images/eu.jpg">
+                </div><!--img topo do site-->
+            </div> <!--flex--> 
+        </div><!--interface-->
+        </section><!--topo do site, introdução à página--> 
+        <section class="Formações" id="formacao">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>Formações.</span></h2>
+                <div class="flex">
+                    <div class="Formações-box">
+                        <img src="Images/formação.png" alt="Formação">
+                        <h3>Formação</h3>
+                        <p>Me formei no ensino médio técnico em administração na ETEC Caraguatatuba, atualmente curso ADS (análise e desenvolvimento de sistemas) pelo Ead da Uninter. Pretendo me especializar em back-end e futuramente um programador Full Stack</p>
+                    </div><!--Formações-->
+        
+                    <div class="Formações-box">
+                        <img src="Images/idioma.png" alt="Idioma">
+                        <h3>Idioma</h3>
+                        <p>Possuo o domínio intermediário da língua inglesa, não cursei em nenhuma escola de idiomas, o meu conhecimento desta língua estrangeira veio através de contato com games, filmes e séries. Pretendo expandir meus conhecimentos sobre a língua inglesa em breve.</p>
+                    </div><!--Formações-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--Formações-->
+        
+            
+        <section class="sobre-mim" id="sobre-mim">
+            <div class "interface">
+                <div class="flex">
+                    <div class="img-sobre mim">     
+                        <img src="Images/eu 2.jpg" alt="">
+                    </div><!--img-sobre mim-->
+                
+                    <div class="txt-sobre mim">
+                        <h2> Prazer <span1>sou Rafael Gonçalves, </span1> 
+                            <span2>conheça um pouco sobre Mim:</span2></h2>
+                        <p>Tenho 23 anos e sou formado em técnico em administração, estou cursando a Faculdade de Análise e desenvolvimento de sistemas na Uninter. 
+                            Sempre tive o interesse na área da computação, procurando expandir meus conhecimentos nas suas diversas vertentes. Mas foi nesse ano de 2023 que resolvi levar a sério e tomar como minha futura profissão.</p>
+                        <p>No meu tempo livre tenho os Games como principal fonte de distração, também sou um grande consumidor de filmes e séries quando tenho tempo livre. 
+                            Também me exercito fisicamente sempre que possível fazendo caminhadas ou praticando ciclismo.</p>
+                    </div><!--txt sobre mim-->
+                </div><!--flex-->     
+            </div><!--interface-->
+        </section><!--Sobre mim-->
+        
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">Meu <span>Portfólio.</span></h2> 
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(Images/meuportfolio.png);">
+                        <a href="https://raphaelgon464.github.io/cadastrodevs/" target="_blank">
+                            <div class="overlay">Página de Cadastro</div>
+                        </a>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+        
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">Entre em contato <span>comigo.</span></h2> 
+                
+                
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu Nome:" required>
+                    <input type="text" name="" id="" placeholder="E-mail:" required>
+                    <input type="text" name="" id="" placeholder="Telefone celular:">
+                    <textarea name="" id="" placeholder="Mensagem"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulário-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-foote">
+                        <img src="Images/rafaelGonçalves logo port (1).png" alt="logotipo rafael">
+                    </div>
+                </div>
             </div>
-            <button class="botao"  type="submit">Concluido</button> 
-
-            </forms>
-
+        
+            <div class="line-footer borda">
+            </div>
+        </div>
+    </footer>
 </body>
-</html>
+</html
